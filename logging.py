@@ -16,14 +16,15 @@ logger.setLevel(logging.DEBUG) # INFO, DEBUG, WARNING, ERROR
 # formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 formatter = logging.Formatter('%(message)s')
 
-# log 
+# log 파일 기록을 위한 셋팅
 fh = logging.FileHandler('log_filename.txt')
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
-ch.setFormatter(formatter)
-logger.addHandler(ch)
+# log 스트리미 출력을 위한 셋팅
+sh = logging.StreamHandler()
+sh.setLevel(logging.DEBUG)
+sh.setFormatter(formatter)
+logger.addHandler(sh)
 logger.debug('This is a test log message.')
