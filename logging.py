@@ -33,3 +33,7 @@ logger.debug('This is a test log message.')
 
 # INFO 정보로 로그 출력 및 기록 (정보 출력시 print 함수보다 이것을 사용하는 것을 권장. 로그를 남기기 위해)
 logger.info("info print test")
+
+
+# log 기록 파일 닫기 (파일 마지막에 선언해 주는 것을 권장함.)
+fh.close()
