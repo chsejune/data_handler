@@ -17,7 +17,7 @@ logger.setLevel(logging.DEBUG) # INFO, DEBUG, WARNING, ERROR
 formatter = logging.Formatter('%(message)s')
 
 # log 파일 기록을 위한 셋팅
-fh = logging.FileHandler('log_filename.txt')
+fh = logging.FileHandler('log_filename.txt', encoding="utf-8")
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
