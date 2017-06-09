@@ -1,3 +1,5 @@
+__author__ = 'Sejune Cheon'
+
 # tested on python3
 # loading list of files from path
 

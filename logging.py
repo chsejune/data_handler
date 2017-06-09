@@ -1,3 +1,5 @@
+__author__ = 'Sejune Cheon'
+
 ## how to log when running program
 
 ## tested in python3

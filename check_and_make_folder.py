@@ -1,3 +1,5 @@
+__author__ = 'Sejune Cheon'
+
 ## check folder from the path and if it does not exist make folder
 
 ## tested in python3
