@@ -51,7 +51,7 @@ plt.imshow(img_rgb) # RGB image viewer
 
 # use skimage for converting image data types
 
-# from uint8 to float (visa versa)
+# from uint8 to float (vise versa)
 img = plt.imread(data_path)
 imgf = ski.img_as_float(img) # img_as_float: Convert to 64-bit floating point.
 img8 = ski.img_as_ubyte(imgf) # img_as_ubyte: Convert to 8-bit uint.
