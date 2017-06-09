@@ -1,5 +1,5 @@
 
-<h1>python codes for handling data</h1>
+<h1>Python codes for handling data</h1>
 
 **1. Image data related**
 
