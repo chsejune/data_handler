@@ -7,9 +7,9 @@ __author__ = 'Sejune Cheon'
 
 
 # importing libraries
-import cv2
-import matplotlib.pyplot as plt
-import skimage as ski
+import cv2 # in color image, BGR is used as default
+import matplotlib.pyplot as plt # in color image RGB is used as default
+import skimage as ski # in color image RGB is used as default
 
 # sample data path
 data_path = "data_sample/000001.jpg"
