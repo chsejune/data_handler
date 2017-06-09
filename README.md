@@ -11,6 +11,6 @@
 * check_and_make_folder.py  
 * get_file_and_folder_list.py
    
-**3. logging**
+**3. Logging**
 
 * logging.py

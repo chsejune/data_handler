@@ -1,5 +1,7 @@
 __author__ = 'Sejune Cheon'
 
+# tested in python 3.5
+
 # two ways of reading and opening image data (some image conversion methods included)
 
 # first way is to use opencv
