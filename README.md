@@ -5,6 +5,7 @@
 
 * read_and_view_image_file.py
 * resize_image.py
+* load_images_from_folder_save_as_numpy_file_with_class_label_information.py
 
 
 **2. File and Folder IO related**
