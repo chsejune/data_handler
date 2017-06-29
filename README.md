@@ -19,7 +19,7 @@
 * logging.py
 
 
-**4. Data Explorer & Transform**
+**4. Data Explorer & Modification**
 
 * count_labels_in_Y.py
 * one_hot_encoding_decoding.py
