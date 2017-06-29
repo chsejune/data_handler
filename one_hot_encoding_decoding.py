@@ -13,8 +13,12 @@ import keras
 ## read data
 dataY = np.load("data_sample/numpy/data_Y.npy")
 
+## class 종류 개수 파악
+class_num = np.unique(dataY).shape[0]
+
 ## one-hot encoding
-encoded_Y = keras.utils.to_categorical(dataY, 4) #(변환할 데이터, class 종류 개수)
+encoded_Y = keras.utils.to_categorical(dataY, class_num) #(변환할 데이터, class 종류 개수)
+
 
 ## one-hot decoding
 decoded_Y = np.argmax(encoded_Y, axis=1) # (변환할 데이터, argmax 기준 축)
