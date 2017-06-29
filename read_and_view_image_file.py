@@ -3,6 +3,7 @@ __author__ = 'Sejune Cheon'
 # tested in python 3.5
 
 # two ways of reading and opening image data (some image conversion methods included)
+# one more reading image data method is added. (using scikit-image
 
 # first way is to use opencv
 # opencv reads and views the RGB image in BGR order.
@@ -12,9 +13,10 @@ __author__ = 'Sejune Cheon'
 import cv2 # in color image, BGR is used as default
 import matplotlib.pyplot as plt # in color image RGB is used as default
 import skimage as ski # in color image RGB is used as default
+import skimage.io as skio # scikit-image read and view image
 
 # sample data path
-data_path = "data_sample/000001.jpg"
+data_path = "data_sample/images/000001.jpg"
 
 img = cv2.imread(data_path)  #image is read in BGR
 
@@ -39,6 +41,14 @@ img_rgb = plt.imread(data_path) # RGB image reader (for datatype: read png image
 
 plt.imshow(img_rgb) # RGB image viewer
 
+
+# third way is to use scikit-image for read image and view image
+
+# read image
+img_ski = skio.imread(data_path, as_grey=False) # if parameter "as_grey" is true, color image will be convert into greyscale image
+
+# view image
+skio.imshow(img_ski)
 
 
 # convert image data types
