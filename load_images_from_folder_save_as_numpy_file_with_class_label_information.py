@@ -11,7 +11,8 @@ __author__ = 'Sejune Cheon'
 import numpy as np
 import cv2
 import os
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
+import skimage.io as skio
 
 ## 불러올 데이터 폴더, 이하 폴더에 클래스 레이블 별로 폴더가 정리되어 있음
 image_path = r"data_sample\images"
@@ -24,7 +25,9 @@ image_set_X=[]  # 불러드린 이미지들 저장 변수
 for d in image_dir:
     file_list = os.listdir(os.path.join(image_path,d))  # 해당 path에 속한 file list 읽어오기
     for f in file_list:
-        image = plt.imread(os.path.join(image_path,d,f))  # 이미지 읽기
+        image = skio.imread(os.path.join(image_path, d, f), as_grey=False)
+        # scikit-image 를 이용하여 이미지 불러들임 greyscale 일 경우 "as_grey" 옵션을 True 로 하면 확실히 이미지를 greyscale로 읽어들임
+        # image = plt.imread(os.path.join(image_path,d,f))  # 이미지 읽기
         resized_img = cv2.resize(image, (89, 109))  # 이미지 resize / (width, height)
         image_set_X.append(resized_img)  # 불러들인 이미지 리스트에 저장
         image_set_Y.append(class_num)   # 불러들인 이미지의 클래스 레이블 정보 리스트에 저장
