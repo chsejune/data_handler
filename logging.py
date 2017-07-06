@@ -20,13 +20,13 @@ formatter = logging.Formatter('%(message)s')
 
 # log 파일 기록을 위한 셋팅
 fh = logging.FileHandler('log_filename.txt', encoding="utf-8")
-fh.setLevel(logging.DEBUG)
+fh.setLevel(logging.DEBUG) #위에서 logger에 전역적으로 log 기록 level를 선언 했으면 별도로 하지 않아도 됨 (수준을 다르게 가져가고 싶을때 설정하기)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
 # log 스트리미 출력을 위한 셋팅
 sh = logging.StreamHandler()
-sh.setLevel(logging.DEBUG)
+sh.setLevel(logging.DEBUG) #위에서 logger에 전역적으로 log 기록 level를 선언 했으면 별도로 하지 않아도 됨 (수준을 다르게 가져가고 싶을때 설정하기)
 sh.setFormatter(formatter)
 logger.addHandler(sh)
 
