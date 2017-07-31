@@ -23,3 +23,7 @@
 
 * count_labels_in_Y.py
 * one_hot_encoding_decoding.py
+
+**5. Pandas related**
+
+* pandas_basics.py
