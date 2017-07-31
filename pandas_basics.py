@@ -19,6 +19,10 @@ sub_df = df.filter(regex=r'I[0-9]') # regular expression 이용, # 열 목록 �
 sub_df = df['Y'] # 'Y' 라는 이름을 가진 열 데이터 추출
 
 
+# 각각의 데이터 조건이 맞는 경우 추출하기
+sub_df = df[df['Y']==0] # df['Y'] 열의 값들 중 값이 '0' 인 경우의 df 데이터들 추출하기 (df와 sub_df의 열 개수는 같음)
+
+
 # 각 열 별로 'NaN' 개수 카운트
 sub_df.isnull().sum()
 
