@@ -31,4 +31,9 @@ sub_df = df[df['Y']==0] # df['Y'] 열의 값들 중 값이 '0' 인 경우의 df 
 sub_df.isnull().sum()
 
 
+# 새로운 항목(열) 만들기
+## Y 변수(class label) 숫자로 변환
+# P=0, F=1
+df['Y_num'] = pd.Categorical(df['Y'], ['P', 'F']).codes
+
 
