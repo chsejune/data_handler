@@ -39,3 +39,7 @@ logger.info("info print test")
 
 # log 기록 파일 닫기 (파일 마지막에 선언해 주는 것을 권장함.)
 fh.close()
+#OR
+# handler 들을 logger라는 변수에 담아서 다닐 경우 아래 처럼 기록 파일 닫기를 수행한다.
+logger.handlers[1].close()
+logger.removeHandler(logger.handlers[1])
