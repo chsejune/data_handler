@@ -20,6 +20,17 @@ data_path = "data_sample/images/000001.jpg"
 
 img = cv2.imread(data_path)  #image is read in BGR
 
+# 이미지가 흑백 또는 컬러 인지 지정한 후 읽어드리는 방법
+img = cv2.imread(data_path, cv2.IMREAD_GRAYSCALE)
+img = cv2.imread(data_path, cv2.IMREAD_COLOR)
+
+###  read an image cv2 설명 ###
+# cv2.IMREAD_COLOR : Loads a color image. Any transparency of image will be neglected. It is the default flag.
+# cv2.IMREAD_GRAYSCALE : Loads image in grayscale mode
+# cv2.IMREAD_UNCHANGED : Loads image as such including alpha channel
+# Note Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
+
+
 cv2.namedWindow("", cv2.WINDOW_NORMAL) # makes the window resizable, if it is commented the image viewer window will not be resizable
 cv2.imshow("", img) # it shows image in BGR so the image is properly viewed
 cv2.waitKey() # holds the window
