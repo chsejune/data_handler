@@ -80,6 +80,10 @@ imgf = ski.img_as_float(img) # img_as_float: Convert to 64-bit floating point.
 img8 = ski.img_as_ubyte(imgf) # img_as_ubyte: Convert to 8-bit uint.
 
 
+# 이미지를 0~1 사이 float 값으로 표현하고 싶을때 간단히 255 로 나눠주면 된다.
+img = plt.imread(data_path)/255.
+
+
 
 
 
