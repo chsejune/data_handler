@@ -1,5 +1,5 @@
 
-<h2>Python codes for handling data</h2>
+<h2>Python codes for handling data v1.0</h2>
 
 **1. Image data related**
 
@@ -12,6 +12,7 @@
 
 * check_and_make_folder.py  
 * get_file_and_folder_list.py
+* rename_file.py
 
    
 **3. Logging**
